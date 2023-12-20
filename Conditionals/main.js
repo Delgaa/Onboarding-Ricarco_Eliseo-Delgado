@@ -12,14 +12,14 @@ if ( num1 > num2 ) {
 // Punto 2
 if ( num1 > num2 ) {
     console.log(num1)
-}else if( num1 == num2 ){
-    console.log("Los numeros son iguales")
-}else{
+}else if( num1 < num2 ){
     console.log(num2)
+}else{
+    console.log("Los numeros son iguales")
 }
 
 // Punto 3
-if( num1 === num2 ){
+if( num1 == num2 ){
     console.log("Los numeros son iguales")
 }else{
     console.log("Los números son diferentes")
@@ -61,3 +61,23 @@ if ( number1 > number2 && number1 > number3) {
 } else {
     console.log(`El número ${number3} es el más grande`)
 }
+
+// Nivel Medio
+// Punto 1
+let color = prompt("Elige un color entre rojo verde o azul")
+switch (color) {
+    case "azul":
+        console.log("El color del mar")
+        break;
+    case "rojo":
+        console.log("El color de la pasion")
+        break;
+    case "verde":
+        console.log("El color de la naturaleza")
+        break;
+    default:
+        console.log("Color ingresado incorrecto")
+        break;
+}
+
+// Punto 2
