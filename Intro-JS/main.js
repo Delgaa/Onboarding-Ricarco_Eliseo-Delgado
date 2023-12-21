@@ -38,8 +38,9 @@ let student = {
     lastName: "Delgado",
     age: 25,
     course: "Programacion",
-    height: 180 + "cm"
+    height: 180 + " cm"
 }
+console.log(student)
 
 console.table(student)
 
