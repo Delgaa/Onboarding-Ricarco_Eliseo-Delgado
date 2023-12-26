@@ -105,7 +105,7 @@ if (( numb1 >= 1 && numb2 >= 1 )&&( numb1 <= 100 && numb2 <= 100 )){
             break;
     }
 }else{
-    console.log("The values ​​entered exceed or are less than the proposed one")
+    console.log("The values entered exceed or are less than the proposed one")
 }
 
 // Punto 3
