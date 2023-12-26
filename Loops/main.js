@@ -125,7 +125,7 @@ console.log(colorsFor(colors))
 // Punto 7
 const numbers = [7, 3, 8, 4, 9]
 for (const number of numbers) {
-    console.log(`El numero es ${number} y su doble es ${number * 2}`)
+    console.log(`The number is ${number} and its double is ${number * 2}`)
 }
 
 // Punto 8
@@ -156,7 +156,7 @@ const groupFamily = [
     }
 ]
 for (const family of groupFamily) {
-    console.log(`Hola, soy ${family.name} ${family.lastName} (${family.member}) tengo ${family.age} años.`)
+    console.log(`Hello, I am ${family.name} ${family.lastName} (${family.member}) and I am ${family.age} years old.`)
 }
 
 // Nivel Alto
@@ -165,15 +165,15 @@ let numEntry
 let numEven = 0
 let numOdd = 0
 do {
-    numEntry = Number(prompt("Ingrese numeros aleatorios 'ingrese 0 para finalizar'."))
+    numEntry = Number(prompt("Enter random numbers 'enter 0 to end'."))
     if (numEntry % 2 == 0) {
         numEven++
     } else {
         numOdd++
     }
 } while (numEntry != 0);
-console.log(`Cantidad de numeros pares ${numEven}`)
-console.log(`Cantidad de numeros impares ${numOdd}`)
+console.log(`Tolal of even numbers ${numEven}`)
+console.log(`Tolal of odd numbers ${numOdd}`)
 
 // Punto 2
 let numberHegther = 0
@@ -183,4 +183,4 @@ for (let i = 0; i < number.length; i++) {
         numberHegther = number[i]
     }
 }
-alert(`El numero mas grande del array es ${numberHegther}`)
+alert(`The largest number in the array is ${numberHegther}`)
