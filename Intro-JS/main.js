@@ -79,7 +79,7 @@ console.log(fruit[4])
 
 // Nivel Alto
 // Punto 1
-let iamAdult = agePrompt => 18
+let iamAdult = Number(prompt("Enter your age:")) >= 18
 console.log(`I am adult: ${iamAdult}`)
 
 // Punto 2
