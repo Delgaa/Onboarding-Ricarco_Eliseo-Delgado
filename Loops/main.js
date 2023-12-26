@@ -1,42 +1,41 @@
 // Nivel Bajo
 // Punto 1
-let num = Number(prompt("Un numero del 1 al 100:"))
+let num = Number(prompt("Enter a number from 1 to 100:"))
 if (num > 0 && num <= 100) {
     for (let i = num; i >= 0; i--) {
         console.log(i)
     }
 } else {
-    alert("El numero ingresado es mayor a 100 o menor a 1.")
+    alert("The number entered is greater than 100 or less than 1.")
 }
 
 // Punto 2
-let number = Number(prompt("Un numero del 1 al 10:"))
+let number = Number(prompt("Enter a number from 1 to 10:"))
 if (number > 0 && number <= 10) {
     for (let i = 1; i <= 10; i++) {
         const table = i * number
         console.log(`${i} x ${number} = ${table}`)
     }
 } else {
-    alert("El numero ingresado es mayor a 10 o menor a 1.")
+    alert("The number entered is greater than 10 or less than 1.")
 }
 
 // Punto 3
-let num1 = Number(prompt("Ingrese un numero, ingrese 0 para terminar"))
+let num1 = Number(prompt("Enter a number (enter 0 to finish):"))
 let acum = num1
 while (num1 != 0) {
-    num1 = Number(prompt("otro numero, ingrese 0 para terminar"))
+    num1 = Number(prompt("Enter another number (enter 0 to finish):"))
     acum += num1
 }
-console.log(`El resultado de los numeros ingresados es: ${acum}`)
+console.log(`The result of the numbers entered is: ${acum}`)
 
 // Punto 4
 let num2 
 let acumu = 0
 do {
-    console.log("Ingrese 0 para terminar")
-    num2 = Number(prompt("Ingrese un numero"))
+    num2 = Number(prompt("Enter a number (enter 0 to finish):"))
     acumu += num2
-    console.log(`El resultado de los numeros ingresados hasta ahora es: ${acumu}`)
+    console.log(`The result of the numbers entered so far is: ${acumu}`)
 } while ( num2 != 0) ;
 
 console.log(acumu)
@@ -46,16 +45,16 @@ const student ={
     name: "Ricardo",
     lastName: "Delgado",
     age: 25,
-    pets: ["gea, blinki"],
+    pets: ["Gea, Blinki"],
     heigth: 180
 }
-console.log("Claves del objeto: ")
+console.log("Keys of its properties: ")
 for (let key in student) {
     console.log(key)
 }
 
 // Punto 6
-console.log("Claves del objeto student: ")
+console.log("Properties of student: ")
 for (let key in student) {
     console.log(student[key])
 }
@@ -64,22 +63,22 @@ for (let key in student) {
 // Punto 1
 acum = 1
 do {
-    num1 = Number(prompt("Ingrese un numero, para adivinar el numero secreto."))
+    num1 = Number(prompt("Enter a number, to guess the secret number."))
     if (num1 == 3) {
-        alert(`¡Has acertado! El número secreto era ${num1} y has hecho ${acum} intentos`)
+        alert(`You're right! The secret number was ${num1} and you have made ${acum} attempts`)
     } else if (num1 > 3) {
-        console.log("El número ingresado es mayor que el secreto")
+        console.log("The number entered is greater than the secret")
         acum++
     } else {
-        console.log("El número ingresado es menor que el secreto")
+        console.log("The number entered is less than the secret")
         acum++
     }
 } while (num1 != 3);
 
 // Punto 2
-let numDivi = Number(prompt("Ingrese un numero, para calcular sus divisiores."))
+let numDivi = Number(prompt("Enter a number, to calculate its divisors."))
 let divis = ""
-console.log(`Los divisores del numero ${numDivi} son: `)
+console.log(`The divisors of the number ${numDivi} are: `)
 for (let i = numDivi; i > 0; i--) {
     if (numDivi % i == 0) {
         divis += `${String(i)}, `
