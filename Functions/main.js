@@ -20,7 +20,7 @@ console.log(anon(number1, number2))
 // Punto 1
 const name = "Ricardo"
 function greet(p_name) {
-    console.log(`Hola soy ${p_name} y estoy estudiando.`)
+    console.log(`Hi i'm ${p_name} and i'm studying`)
 }
 greet(name)
 
@@ -71,9 +71,9 @@ console.log(priceTotal(100, 11))
 // Punto 6
 function isAnAdult(p_age) {
     if (p_age >= 18) {
-        return "Eres mayor de edad"
+        return "You are an adult"
     } else {
-        return "No eres adulto"
+        return "You are not an adult"
     }
 }
 console.log(isAnAdult(15))
@@ -84,13 +84,13 @@ function payTax(income_anual) {
     let tax 
     if (income_anual <= 10000) {
         tax = income_anual * 0.1
-        return `El impuesto a pagar es: ${tax}`
+        return `The tax to pay is: ${tax}`
     } else if (income_anual > 10000 && income_anual <= 20000) {
             tax = income_anual * 0.15
-            return `El impuesto a pagar es: ${tax}`
+            return `The tax to pay is: ${tax}`
     } else {
         tax = income_anual * 0.20
-        return `El impuesto a pagar es: ${tax}`
+        return `The tax to pay is: ${tax}`
     }
 }
 console.log(payTax(23000))
@@ -103,85 +103,55 @@ function dayOfWeek(day) {
         case 3:
         case 4:
         case 5:
-            return "Es un dia hábil."
+            return "It is a business day."
         case 6:
         case 7:
-            return "Es fin de semana."
+            return "It's the weekend."
         default:
-            return "Dia ingresado invalido."
+            return "Day not admitted."
     }
 }
 console.log(dayOfWeek(4))
 
 // Punto 3
-function validatorInf(personalInformation) {
-
-    personalInformation.name = prompt("Ingrese su nombre:")
-    if (personalInformation.name == "") {
-        console.log("El nombre no puede estar vacío")
-        personalInformation.name = prompt("Ingrese su nombre:")
-
-        personalInformation.lastName = prompt("Ingrese su apellido:")
-        if (personalInformation.lastName == "") {
-            console.log("El apellido no puede estar vacío")
-            personalInformation.lastName = prompt("Ingrese su apellido:")
-
-            personalInformation.age = Number(prompt("Ingrese su edad:"))
-            if (personalInformation.age == "") {
-                console.log("La edad no puede estar vacío")
-                personalInformation.age = Number(prompt("Ingrese su edad:"))
-            }
-        } else {
-
-            personalInformation.age = Number(prompt("Ingrese su edad:"))
-            if (personalInformation.age == "") {
-                console.log("La edad no puede estar vacío")
-                personalInformation.age = Number(prompt("Ingrese su edad:"))
-            }
-        }
-    } else {
-
-        personalInformation.lastName = prompt("Ingrese su apellido:")
-        if (personalInformation.lastName == "") {
-            console.log("El apellido no puede estar vacío")
-            personalInformation.lastName = prompt("Ingrese su apellido:")
-
-            personalInformation.age = Number(prompt("Ingrese su edad:"))
-            if (personalInformation.age == "") {
-                console.log("La edad no puede estar vacío")
-                personalInformation.age = Number(prompt("Ingrese su edad:"))
-            }
-        } else {
-
-            personalInformation.age = Number(prompt("Ingrese su edad:"))
-            if (personalInformation.age == "") {
-                console.log("La edad no puede estar vacío")
-                personalInformation.age = Number(prompt("Ingrese su edad:"))
-            }
-        }
+let nameJoined = prompt("Enter your name")
+function personalInformation(p_nameJoined) {
+    if (nameJoined == "") {
+        console.error("The name cannot be empty")
+        return
     }
+    const lastNameJoined = prompt("Enter your lastname")
+    if (lastNameJoined == "") {
+        console.error("The lastname cannot be empty")
+        return
+    }
+    const ageJoined = Number(prompt("Enter your age"))
+    if (isNaN(ageJoined) || ageJoined <= 0) {
+        console.error("The age cannot be empty")
+        return
+    }
+    let personal = {}
+    return personal = {
+        name: nameJoined,
+        lastName: nameJoined,
+        age: ageJoined
+    }
+}
+console.log(personalInformation(nameJoined))
 
-    console.log( personalInformation )
-}
-let miInfo ={
-    name: "Ricardo",
-    lastName: "Delgado",
-    age: 25
-}
-// validatorInfo(miInfo)
 
 // Punto 4
 function greet(p_name) {
-    return `Hola, mi nombre es ${p_name}`
+    return `Hi, my name is ${p_name}`
 }
 function calculateAge(p_ageActual, p_ageBirth) {
     let total = p_ageActual - p_ageBirth
     return total
 }
 function present() {
-    let name = prompt("Ingrese su nombre completo:")
-    let ageActual = prompt("Ingrese el año actual:")
-    let ageBirth = prompt("Ingrese su año de nacimiento:")
-    alert(`${greet(name)} y tengo ${calculateAge(ageActual, ageBirth)} años`)
+    let name = prompt("Enter your full name:")
+    let ageActual = new Date().getFullYear()
+    let ageBirth = prompt("Enter your year of birth:")
+    alert(`${greet(name)} and i have ${calculateAge(ageActual, ageBirth)} years old.`)
 }
 present()
