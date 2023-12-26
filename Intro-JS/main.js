@@ -16,10 +16,10 @@ let myPet = "Gea"
 let petAge = 5
 
 // Punto 6
-let fullName = `${myName} ${myLastName}`
+let fullName = myName + " " + myLastName
 
 // Punto 7
-let presentationText = `Mi nombre es ${fullName} y tengo ${myAge} años y mi mascotas se llama ${myPet} y tiene ${petAge} años.`
+let presentationText = fullName + " " + myAge + " " + myPet + " " + petAge
 console.log( presentationText )
 
 // Nivel Medio
@@ -37,10 +37,9 @@ let student = {
     name: "Ricardo",
     lastName: "Delgado",
     age: 25,
-    course: "Programacion",
+    course: "Programming",
     height: 180 + " cm"
 }
-console.log(student)
 
 console.table(student)
 
@@ -56,7 +55,7 @@ let pet = {
     animal: "gato",
     age: 5,
     race: "Siamés",
-    hobby: "Dormir",
+    hobby: "Sleep",
 }
 
 console.table(pet)
@@ -68,7 +67,7 @@ console.log(pet.race)
 console.log(pet.hobby)
 
 // Punto 4
-let fruit = [ "Manzana", "Mango", "Sandia", "Banana", "Pera" ]
+let fruit = [ "Apple", "Mango", "Watermelon", "Banana", "Pear" ]
 
 console.log(fruit)
 
@@ -80,9 +79,8 @@ console.log(fruit[4])
 
 // Nivel Alto
 // Punto 1
-let agePrompt = prompt()
-let IamAdult = agePrompt => 18
-console.log(`I am adult  ${agePrompt}`)
+let iamAdult = agePrompt => 18
+console.log(`I am adult: ${iamAdult}`)
 
 // Punto 2
 let numbers = [62, 84, 16, 49, 38]
