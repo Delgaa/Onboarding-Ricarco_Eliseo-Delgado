@@ -1,7 +1,7 @@
 // Nivel Bajo
 // Punto 1
 function add() {
-    console.log(`${100 * 20}`)
+    console.log( 100 * 20 )
 }
 
 // Punto 2
