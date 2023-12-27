@@ -119,7 +119,7 @@ function colorsFor(arayColors) {
         console.log(color)
     }
 }
-console.log(colorsFor(colors))
+colorsFor(colors)
 
 // Punto 7
 const numbers = [7, 3, 8, 4, 9]
@@ -177,9 +177,9 @@ console.log(`Tolal of odd numbers ${numOdd}`)
 // Punto 2
 let numberHegther = 0
 const number3 = [53, 40, 94, 14, 41, 86, 35, 29, 39, 11]
-for (let i = 0; i < number.length; i++) {
-    if (number[i] > numberHegther) {
-        numberHegther = number[i]
+for (let i = 0; i < number3.length; i++) {
+    if (number3[i] > numberHegther) {
+        numberHegther = number3[i]
     }
 }
 alert(`The largest number in the array is ${numberHegther}`)
