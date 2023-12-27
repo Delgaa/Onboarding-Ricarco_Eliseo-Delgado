@@ -1,12 +1,28 @@
 // Nivel Bajo
+// Punto 1
+function add() {
+    console.log(`${100 * 20}`)
+}
+
+// Punto 2
+add()
+
+// Punto 3
 let number1 = 100
 let number2 = 20
-
-function add( param1, param2) {
+function add2( param1, param2) {
     let result = param1 * param2
-    return result
+    console.log(result)
 }
-console.log(add(number1, number2))
+// Punto 4
+add2(number1, number2)
+
+// Punto 5
+function add3( param1, param2) {
+    let result = param1 * param2
+    return result 
+}
+console.log(add3(number1, number2))
 
 // Punto 6
 const anon = function (param1, param2) {
