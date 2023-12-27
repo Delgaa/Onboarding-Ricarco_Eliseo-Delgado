@@ -72,7 +72,7 @@ switch (color) {
     case "red":
         console.log("The color of passion")
         break;
-    case "greed":
+    case "green":
         console.log("The color of nature")
         break;
     default:
