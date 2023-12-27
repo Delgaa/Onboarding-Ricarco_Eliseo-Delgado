@@ -38,8 +38,6 @@ do {
     console.log(`The result of the numbers entered so far is: ${acumu}`)
 } while ( num2 != 0) ;
 
-console.log(acumu)
-
 // Punto 5
 const student ={
     name: "Ricardo",
@@ -61,19 +59,20 @@ for (let key in student) {
 
 // Nivel Medio 
 // Punto 1
+const numberSecret = 9
 acum = 1
 do {
     num1 = Number(prompt("Enter a number, to guess the secret number."))
-    if (num1 == 3) {
+    if (num1 == numberSecret) {
         alert(`You're right! The secret number was ${num1} and you have made ${acum} attempts`)
-    } else if (num1 > 3) {
+    } else if (num1 > numberSecret) {
         console.log("The number entered is greater than the secret")
         acum++
     } else {
         console.log("The number entered is less than the secret")
         acum++
     }
-} while (num1 != 3);
+} while (num1 != numberSecret);
 
 // Punto 2
 let numDivi = Number(prompt("Enter a number, to calculate its divisors."))
@@ -87,7 +86,7 @@ for (let i = numDivi; i > 0; i--) {
 console.log(divis)
 
 // Punto 3
-let cantiad = 5
+let cantiad = parseInt(prompt("Enter a number for ring the bell"))
 let ring = ""
 function ringBell() {
     console.log("Ding Dong");
